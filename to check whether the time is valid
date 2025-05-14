@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+int main() {
+    int hours, minutes, seconds;
+    
+    scanf("%d:%d:%d", &hours, &minutes, &seconds);
+    
+    if (hours >= 0 && hours < 24 && minutes >= 0 && minutes < 60 && seconds >= 0 && seconds < 60) {
+        printf("Valid\n");
+    } else {
+        printf("Not Valid\n");
+    }
+    
+    return 0;
+}
